@@ -1,0 +1,6 @@
+# ignore .gradle folder
+.gradle
+
+
+#ignore idea
+.idea

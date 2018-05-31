@@ -1,0 +1,3 @@
+rootProject.name = 'mppmovie'
+
+include 'mppmovie-common', 'mppmovie-jvm', 'mppmovie-js'
