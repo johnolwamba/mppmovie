@@ -1,6 +1,6 @@
 # ignore .gradle folder
 .gradle
-
+**/build/**
 
 #ignore idea
 .idea

@@ -9,10 +9,13 @@ buildscript {
     }
 }
 apply plugin: 'kotlin-platform-jvm'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
 }
+
+mainClassName="com.mppmovie.Application"
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
