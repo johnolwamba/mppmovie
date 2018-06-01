@@ -1,33 +1,21 @@
 package com.mppmovie
 
-actual class Date {
+actual external class Date {
     actual constructor()
 
-    actual fun getDate(): Int {
-       return getDate()
-    }
+    actual fun getDate(): Int
 
-    actual fun getMonth(): Int {
-       return getMonth()
-    }
+    actual fun getMonth(): Int
 
-    actual fun getFullYear(): Int {
-       return getFullYear()
-    }
+    actual fun getFullYear(): Int
 
-    actual fun getHours(): Int {
-       return getHours()
-    }
+    actual fun getHours(): Int
 
-    actual fun getMinutes(): Int {
-       return getMinutes()
-    }
+    actual fun getMinutes(): Int
 
-    actual fun getTime(): Number {
-       return getTime()
-    }
+    actual fun getTime(): Number
 }
 
 actual fun displayMovie(movie: Movie) {
-    console.log("JS ${movie.name} added on ${movie.releaseDate}")
+    console.log("JS ${movie.name} added on ${movie.releaseDate.toString()}")
 }
