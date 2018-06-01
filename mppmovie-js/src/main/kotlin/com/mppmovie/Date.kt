@@ -1,31 +1,33 @@
 package com.mppmovie
 
-actual class Date actual constructor() {
+actual class Date {
+    actual constructor()
+
     actual fun getDate(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getDate()
     }
 
     actual fun getMonth(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getMonth()
     }
 
     actual fun getFullYear(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getFullYear()
     }
 
     actual fun getHours(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getHours()
     }
 
     actual fun getMinutes(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getMinutes()
     }
 
     actual fun getTime(): Number {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       return getTime()
     }
 }
 
 actual fun displayMovie(movie: Movie) {
-    console.log("JS")
+    console.log("JS ${movie.name} added on ${movie.releaseDate}")
 }

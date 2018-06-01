@@ -9,9 +9,20 @@ buildscript {
     }
 }
 apply plugin: 'kotlin-platform-js'
+apply plugin: "kotlin2js"
 
 repositories {
     mavenCentral()
+}
+
+compileKotlin2Js {
+    kotlinOptions{
+        sourceMap = true
+        sourceMapEmbedSources = "always"
+        moduleKind = 'commonjs'
+        metaInfo = true
+        main = 'com.mppmovie.Main'
+    }
 }
 
 dependencies {
